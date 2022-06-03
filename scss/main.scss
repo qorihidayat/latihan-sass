@@ -1,0 +1,63 @@
+@mixin profile ($size, $circle : true) {
+    width: $size;
+    border: 1px solid #e4e4e4;
+    box-shadow: 1px 1px 3px black;
+
+    @if $circle {
+        border-radius: 50%;
+    }
+}
+
+.circle-profile{
+    @include profile(100px, true);
+}
+
+.box-profile{
+    @include profile(150px, false);
+}
+
+
+@mixin arrow($direction : left) {
+    background-color: transparent;
+    border: 10px solid transparent;
+    @if $direction == right {
+        border-right-color: rgb(0, 255, 21);
+    }@else if $direction == top{
+        border-top-color: aqua;
+    }@else if $direction == bottom{
+        border-bottom-color: rgb(229, 255, 0);
+    }@else if $direction == left{
+        border-left-color: rgb(153, 0, 255);
+    }
+}
+
+.arrow{
+    @include arrow();
+}
+$social-color : (
+    youtube : rgb(248, 72, 72),
+    instagram : rgb(185, 34, 185),
+    twitter : rgb(93, 203, 240),
+    reddit : rgb(238, 120, 52),
+    github : #1f1f1f,
+);
+.socials{
+ @each $social, $color in $social-color {
+     .#{$social}{
+    background-color:$color;
+     }
+ }
+}
+
+@mixin colorGrad($color) {
+    list-style: none;
+    @for $i from 1 to 11 {
+        &:nth-child(#{$i}){
+            background-color: darken($color, $i * 3%);
+        }
+    }
+}
+
+.bc{
+    @include colorGrad(salmon);
+}
