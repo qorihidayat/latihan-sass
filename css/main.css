@@ -1,0 +1,85 @@
+.circle-profile {
+  width: 100px;
+  border: 1px solid #e4e4e4;
+  -webkit-box-shadow: 1px 1px 3px black;
+          box-shadow: 1px 1px 3px black;
+  border-radius: 50%;
+}
+
+.box-profile {
+  width: 150px;
+  border: 1px solid #e4e4e4;
+  -webkit-box-shadow: 1px 1px 3px black;
+          box-shadow: 1px 1px 3px black;
+}
+
+.arrow {
+  background-color: transparent;
+  border: 10px solid transparent;
+  border-left-color: #9900ff;
+}
+
+.socials .youtube {
+  background-color: #f84848;
+}
+
+.socials .instagram {
+  background-color: #b922b9;
+}
+
+.socials .twitter {
+  background-color: #5dcbf0;
+}
+
+.socials .reddit {
+  background-color: #ee7834;
+}
+
+.socials .github {
+  background-color: #1f1f1f;
+}
+
+.bc {
+  list-style: none;
+}
+
+.bc:nth-child(1) {
+  background-color: #f97363;
+}
+
+.bc:nth-child(2) {
+  background-color: #f96554;
+}
+
+.bc:nth-child(3) {
+  background-color: #f85846;
+}
+
+.bc:nth-child(4) {
+  background-color: #f84b37;
+}
+
+.bc:nth-child(5) {
+  background-color: #f73d28;
+}
+
+.bc:nth-child(6) {
+  background-color: #f73019;
+}
+
+.bc:nth-child(7) {
+  background-color: #f6230b;
+}
+
+.bc:nth-child(8) {
+  background-color: #e91f08;
+}
+
+.bc:nth-child(9) {
+  background-color: #db1d08;
+}
+
+.bc:nth-child(10) {
+  background-color: #cc1b07;
+}
+/*# sourceMappingURL=main.css.map */
